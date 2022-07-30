@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+.container-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* padding: 2rem 10rem; */
+  margin: 1.8rem;
+  border-radius: 11px;
+}
+.container {
+  max-width: 1000px;
+
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  padding: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.box--1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+
+.box--2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.box--3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: hsl(0, 0%, 95%);
+  padding: 13px 27px;
+  border-radius: 26px;
+
+  border: 2px solid hsl(0, 0%, 95%);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s;
+  margin-top: 40px;
+}
+
+.box-header {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.box-desc {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 18px;
+}
+
+.btn--1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn--2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn--3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn--1:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: #fff;
+}
+
+.btn--2:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: #fff;
+}
+
+.btn--3:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .container-box {
+    grid-template-columns: 1fr;
+  }
+}
